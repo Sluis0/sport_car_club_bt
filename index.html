@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Racing+Sans+One&display=swap"
+        rel="stylesheet">
+    <style>
+        header h1,
+        h3 {
+            font-family: "Racing Sans One", sans-serif;
+        }
+
+        h3 {
+            font-size: 2em;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: white;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section h3 {
+            text-align: center;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: white;
+            z-index: 1000;
+        }
+
+        a,
+        p,
+        .accordion {
+            font-family: "Lexend Zetta";
+        }
+
+        section h2 {
+            margin-top: 12px;
+            font-size: 2.2em;
+            font-family: "Rajdhani";
+            font-weight: 700;
+        }
+
+        .bvt,
+        .accordion-button {
+            font-size: 1.4em;
+            font-family: "Rajdhani";
+            font-weight: 500;
+        }
+
+        .card {
+            margin-bottom: 15px;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        @media (min-width: 992px) {
+            .carousel-item img {
+                height: 500px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .carousel-item img {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .carousel-item img {
+                height: 300px;
+            }
+        }
+
+        footer {
+            padding: 20px 0;
+            text-align: center;
+            color: #444444;
+            margin-top: 24px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: white;
+        }
+
+        .accordion-button {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>SPORT CAR CLUB</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#novos">Novos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#classicos">Classicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#curiosidades">Curiosidades</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="carousel-ex" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/car-race-438467_1280.jpg" class="d-block w100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/car-1283947_1280.jpg" class="d-block w100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/auto-2179220_1280.jpg" class="d-block w100" alt="">
+                </div>
+            </div>
+            <button data-bs-target="#carousel-ex" data-bs-slide="prev" type="button" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" data-bs-target="#carousel-ex" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-ex" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel-ex" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-ex" data-bs-slide-to="2"></button>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <section id="inicio">
+                <h2>Bem-vindo!!</h2>
+                <p class="bvt">
+                    Sinta a emoção das pistas e a potência dos motores das maravilhas da engenharia que fazem nosso
+                    coração acelerar.<br />
+                    Mergulhe no universo da velocidade e descubra tudo sobre os veículos que definem a verdadeira
+                    essência do automobilismo.
+                </p>
+            </section>
+            <section id="novos" class="container">
+                <h3>Novos</h3>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Hyundai I20 N</h4>
+                            </div>
+                            <img src="./images/hyundaii20.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">O Hyundai i20 N é um hatchback esportivo de rally, com motor turbo
+                                    e foco em desempenho e estilo arrojado.</p>
+                                <a href="#" class="btn btn-primary">Conheça</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Ford Puma</h4>
+                            </div>
+                            <img src="./images/fordpumarally.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">O Ford Puma é um hatch compacto de rally, combinando design com
+                                    tecnologias avançadas para uma condução dinâmica.</p>
+                                <a href="#" class="btn btn-primary">Conheça</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Subaru WRX</h4>
+                            </div>
+                            <img src="./images/suabuwrxrally.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">O Subaru WRX é um sedã esportivo de rally com tração integral e
+                                    motor turbo, conhecido por seu desempenho robusto.</p>
+                                <a href="#" class="btn btn-primary">Conheça</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Toyota GR Yaris</h4>
+                            </div>
+                            <img src="./images/toyotagryaris.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">O Toyota GR Yaris é um hatch de rally com tração integral e motor
+                                    turbo, combinando alto desempenho com design agressivo.</p>
+                                <a href="#" class="btn btn-primary">Conheça</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="classicos">
+                <h3>Classicos</h3>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Audi Quattro</h4>
+                            </div>
+                            <img src="./images/quattro.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">O Audi Quattro revolucionou o rally nos anos 80 com sua tração
+                                    integral e motor turbo anti-lag.</p>
+                                <a href="#" class="btn btn-primary">Conheça</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Toyota Celica</h4>
+                            </div>
+                            <img src="./images/toyotacelicarally.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">O Toyota Celica brilhou nos anos 90, conquistando títulos com seu
+                                    motor potente e design robusto.</p>
+                                <a href="#" class="btn btn-primary">Conheça</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Porsche 911 SC/RS</h4>
+                            </div>
+                            <img src="./images/porsche911scrsgrupb.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">O Porsche 911 SC/RS combinou o design clássico do 911 com
+                                    desempenho excepcional em rally.</p>
+                                <a href="#" class="btn btn-primary">Conheça</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Lancia 037</h4>
+                            </div>
+                            <img src="./images/LanciaRally037.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">O Lancia 037 dominou o Grupo B nos anos 80 com seu motor
+                                    supercharged e design elegante.</p>
+                                <a href="#" class="btn btn-primary">Conheça</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Ford Escort RS200</h4>
+                            </div>
+                            <img src="./images/fordscortrs200.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">O Ford Escort RS200 é um ícone do Grupo B, famoso por seu design
+                                    avançado e tração integral.</p>
+                                <a href="#" class="btn btn-primary">Conheça</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="curiosidades">
+                <h3>Curiosidades</h3>
+                <div class="accordion ">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                data-bs-target="#resposta1">Qual é a função da tração integral em carros de
+                                rally?</button>
+                        </div>
+                        <div id="resposta1" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                A tração integral ajuda a melhorar a aderência e o controle em condições de terreno
+                                difícil, como lama e neve, proporcionando maior estabilidade e desempenho.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                data-bs-target="#resposta2">Como os carros de rally enfrentam condições extremas de
+                                temperatura?</button>
+                        </div>
+                        <div id="resposta2" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Os carros de rally utilizam sistemas de refrigeração avançados e isolamentos térmicos
+                                para manter o motor e outros componentes operando dentro da faixa ideal de temperatura.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                data-bs-target="#resposta3">O que são as barras de estabilização em carros de rally e
+                                qual é sua função?</button>
+                        </div>
+                        <div id="resposta3" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                As barras de estabilização são componentes de suspensão que reduzem o rolamento da
+                                carroceria em curvas, melhorando a estabilidade e a aderência durante a condução
+                                agressiva.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                data-bs-target="#resposta4">Por que os carros de rally possuem carroscerias
+                                reforçadas?</button>
+                        </div>
+                        <div id="resposta4" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                As carrocerias reforçadas são projetadas para resistir a impactos e colisões durante
+                                competições, garantindo a segurança dos pilotos e a integridade estrutural do veículo.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                data-bs-target="#resposta5">Qual é o propósito dos sistemas de suspensão ajustáveis em
+                                carros de rally?</button>
+                        </div>
+                        <div id="resposta5" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Os sistemas de suspensão ajustáveis permitem que os pilotos ajustem a rigidez e a altura
+                                da suspensão para se adaptar a diferentes tipos de terreno e condições de corrida,
+                                otimizando o desempenho.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; SPORT CAR CLUB - <s>QUASE</s> Todos os direitos reservados - 2024
+            </p>
+        </div>
+    </footer>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
